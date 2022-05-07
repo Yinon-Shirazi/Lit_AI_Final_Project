@@ -1,0 +1,148 @@
+#hello_div{
+    padding-top:  10px;
+    padding-bottom:  10px;
+    color: blue;
+}
+
+.body{
+    background-color: lightblue;
+}
+.test{
+    background-color: black;
+}
+.img{
+    width: 100%;
+}
+
+.override{
+    padding:1px;
+}
+
+.columbiaU{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.atColumbia{
+    color: rgb(99, 98, 98);
+    padding-top: 2px;
+}
+
+.tweetButton{
+    padding-top: 10px;
+    padding-bottom: 10px;                
+}
+
+.bigger{
+    font-size: 40px;
+}
+
+.pad{
+    padding-bottom: 6px;
+    padding-right: 20px;
+}
+
+.menu{
+    padding:10px;
+    font-weight: bolder;
+}
+
+.white{
+    margin-bottom: 2px;
+    background-color: white;
+}
+
+.profile{
+    padding:5px;
+    padding-left: 10px;
+    width: 12.5%;
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+}
+
+.compliment{
+    padding:0px;
+    width: 87.5%;
+    flex: 0 0 87.5%;
+    max-width: 87.5%;
+}
+
+.name{
+    font-size: small;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+
+.content{
+    padding-left: 8px;
+    font-size: 18px;
+    display: block;
+}
+
+.padIMG{
+    padding: 6px;
+    padding-right: 15px;
+}
+
+.suggestions{
+    display: inline-block;
+    background-color: white;
+    padding-bottom: 16px;
+    padding-right: 50px;
+}
+
+.noam{
+    display: block;
+    background-color: red;
+}
+
+.last_col_img{
+    height: 60px;
+    padding-top: 2px;
+    padding-left: 8px;
+    display: inline-block;
+}
+
+.user{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 60px;
+    padding-top: 2px;
+    font-size: 13px;
+}
+
+hr.solid {
+border-top: 1px solid #bbb;
+width: 110%;
+align-items: center;
+margin-top: 12px;
+margin-bottom: 12px;
+margin-left: 8px;
+}
+
+.trends{
+    background-color: white;
+    margin-top: 20px;
+    padding-bottom: 16px;
+}
+
+.Coms{
+    font-size: small;
+    color: blue;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.tweets{
+    color: rgb(143, 142, 142);
+    font-size: 11px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+}
+
+.buttons{
+    border-width: thin;
+}
+
