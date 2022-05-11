@@ -146,3 +146,62 @@ margin-left: 8px;
     border-width: thin;
 }
 
+.long{
+    height: 750px;
+}
+
+.center{
+    text-align: center;
+}
+
+.addTitle{
+    font-size: 50px;
+}
+
+
+.horizontal{
+    background-color: lightgrey;
+    height: 1px;
+    width: 90%;
+    z-index:200;
+}
+
+.instruction{
+    padding-right: 5px;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.add{
+    color: black;
+    padding-top: 9px;
+    font-size: large;
+    width: 80%;
+    display: inline-block;
+}
+
+.example{
+    padding-left: 6px; 
+}
+
+.input{
+    padding-bottom: 10px;
+}
+
+.send{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 210px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.warnings{
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.red{
+    color: red;
+}

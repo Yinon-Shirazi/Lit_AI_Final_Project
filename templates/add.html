@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'add.js') }}"></script>
+
+<script>
+    
+    clause_A = {{a|tojson}}
+    clause_B = {{b|tojson}}
+    clause_C = {{c|tojson}}
+</script>
+
+
+<body class = "body">
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-md-3">
+                <div class = "row columbiaU">Columbia University</div>
+                <div class = "row atColumbia">@Columbia</div>
+
+                <div class = "row pad">
+                    <div class = "col-md-4 override">
+                        <img src = "https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" class = "img">
+                    </div>
+                    <div class = "col-md-4 override">
+                        <img src = "https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" class = "img">
+                    </div>
+                    <div class = "col-md-4 override">
+                        <img src = "https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" class = "img">
+                    </div>
+                    <div class = "col-md-4 override">
+                        <img src = "https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" class = "img">
+                    </div>
+                    <div class = "col-md-4 override">
+                        <img src = "https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" class = "img">
+                    </div>
+                    <div class = "col-md-4 override">
+                        <img src = "https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" class = "img">
+                    </div>
+                </div>
+                
+            </div>
+            <div class = "col-md-6">
+                <div class = "row white">
+                    <div class = "menu"> Tweets</div>
+                    <div class = "menu"> Media</div>
+                    <div class = "menu"> Other</div>
+                    <div class = "menu"> Videos</div>
+                </div>
+                <!-- WORK ON EDIT-->
+                <div class = "row white">
+                    <div class = "col-md-3"></div>
+                    <div class = "col-md-7">
+                        <div class = " addTitle">
+                            Add Clauses
+                        </div>
+                    </div>
+                    <div class = "col-md-2"></div>
+                    <hr class = "hr.solid horizontal">   
+                </div>
+                <div class = "row white input">
+                    <div class = "h5 example"> Add a descriptor clause</div>
+                    <div class = "h6 example" style="color: grey;"> (For Example: "Regrettably", "After many failed attempts", "Next week", "Luckily", etc. )</div>
+                    <div class = "col-md-5">
+                        <div class = "instruction">Add Clause A:</div>
+                    </div>
+                    <div class = "col-md-7">
+                        <div id = "clauseA_warn" class = "warnings"></div>
+                        <input id ="clause_A" size = "30" class = "form-control add">
+                        <span class='edit'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                          </svg></span>
+                    </div>
+                    <button id = "send_A" class="btn btn-primary send">
+                        Submit Clause A
+                    </button>
+                </div>
+
+                <div class = "row white input">
+                    <div class = "h5 example"> Add a subject clause</div>
+                    <div class = "h6 example" style="color: grey;"> (For Example: "Elon Musk", "the state of Wisconsin", "Columbia's student counsil", etc. )</div>
+                    <div class = "col-md-5">
+                        <div class = "instruction">Add Clause B:</div>
+                    </div>
+                    <div class = "col-md-7">
+                        <div id = "clauseB_warn" class = "warnings"></div>
+                        <input id ="clause_B" size = "30" class = "form-control add">
+                        <span class='edit'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                          </svg></span>
+                    </div>
+                    <button id = "send_B" class="btn btn-primary send">
+                        Submit Clause B
+                    </button>
+                </div>
+
+                <div class = "row white input">
+                    <div class = "h5 example"> Add an action clause</div>
+                    <div class = "h6 example" style="color: grey;"> (For Example: "will declare their abortion policy","is going to spread lies and misinformation", "will ban masks outdoors", "will fix the elections", ...)</div>
+                    <div class = "col-md-5">
+                        <div class = "instruction">Add Clause C:</div>
+                    </div>
+                    <div class = "col-md-7">
+                        <div id = "clauseC_warn" class = "warnings"></div>
+                        <input id ="clause_C" size = "30" class = "form-control add">
+                        <span class='edit'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                          </svg></span>
+                    </div>
+                    <button id = "send_C" class="btn btn-primary send">
+                        Submit Clause C
+                    </button>
+                </div>
+                            </div>
+            <div class = "col-md-3">
+
+                <div class = "trends">
+                    <div class = "menu"> Trends for You!</div>
+                    <div class = "COMS"> #LitAI</div>
+                    <div class = "tweets"> 45 million tweets</div>
+                    <div class = "COMS"> #TEXONOMY</div>
+                    <div class = "tweets"> 35 million tweets</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
