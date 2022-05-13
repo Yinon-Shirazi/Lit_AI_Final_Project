@@ -6,17 +6,12 @@ import random
 app = Flask(__name__)
 
 
-A = ["BREAKING: next week","This year","After so much time and effore","In the next few months","Finally,","Eventually,", "Unfortunately", "Sooner or later", "Ultimately", "One day", "Hopefully" ]
+A = ["BREAKING: next week","This year","After so much time and effort","In the next few months","Finally,","Eventually,", "Unfortunately", "Sooner or later", "Ultimately", "One day", "Hopefully" ]
 B = ["the Congress","the President of the United States","the Supreme Court","Eric Addams","the governor", "the U.S Senate","the U.N", "Elon Musk", "the World Health Organization"]
-C = ["will announce on elections.","will declare their abortion policy.","will pass legislation to limit the press.","will say they will upgrade homeless shelters.","is going to take control over NASA.","is not going to endorse sustainability.", "will get involved with Russia-Ukraine confilct.", "will support local businesses.", "will abolish the mask mandate.", "is going to buy only American-made products."]
+C = ["will announce on elections.","will declare their abortion policy.","will pass legislation to limit the press.","will say they will upgrade homeless shelters.","is going to take control over NASA.","is not going to endorse sustainability.", "will get involved with Russia-Ukraine conflict.", "will support local businesses.", "will abolish the mask mandate.", "is going to buy only American-made products."]
 
 # ROUTES
 
-def chooseClauses(A,B,C):
-    a = A[math.floor(random.uniform(0, 1) * 4)]
-    b = B[math.floor(random.uniform(0, 1) * 3)]
-    c = C[math.floor(random.uniform(0, 1) * 3)]
-    return a,b,c
     
 
 @app.route('/')
